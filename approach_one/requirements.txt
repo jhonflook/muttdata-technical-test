@@ -1,0 +1,17 @@
+# Procesamiento de datos
+pandas==2.1.0
+numpy==1.24.3
+
+# Machine Learning
+xgboost==2.0.0
+scikit-learn==1.3.0
+fastapi
+uvicorn
+openai
+# Visualización y App
+streamlit==1.26.0
+pydeck 
+plotly==5.16.1
+
+# Utilidades
+datetime
