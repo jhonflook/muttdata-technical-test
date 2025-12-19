@@ -1,8 +1,8 @@
 .vercel
 .env
+*.joblib
+*.pyc
+*.json
+
 datalake/
 models/
-# add all files ending with .joblib
-*.joblib
-*pyc
-*json
