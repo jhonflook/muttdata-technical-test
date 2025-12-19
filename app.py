@@ -38,7 +38,7 @@ selected_zone = st.sidebar.selectbox("Zona", [i for i in range(5)])
 future_days = st.sidebar.slider("Días a Predecir", 1, 7, 3)
 lead_time = st.sidebar.slider("Tiempo Entrega (min)", 20, 60, 35)
 # agregar selectbox para definir la ventana de tiempo que se muestra en el gráfico
-time_window = st.sidebar.selectbox("Ventana de Tiempo en Gráfico", ["24 horas", "3 días", "7 días", '15 días'], index=0)
+time_window = st.sidebar.selectbox("Ventana de Tiempo en Gráfico", ['15 días', "7 días", "3 días", "24 horas", "12 horas"], index=0)
 # agregar boton para recargar modelo y datos
 if st.sidebar.button("Recargar Modelo y Datos"):
     load_model.clear()
@@ -76,6 +76,7 @@ zone_data['repartidores'] = (zone_data['pred'] * (lead_time/60) * 1.2).apply(np.
 col1, col2 = st.columns([2, 1])
 time_window_hours = {
     "24 horas": 24,
+    "12 horas": 12,
     "3 días": 72,
     "7 días": 168,
     "15 días": 360
