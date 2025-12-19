@@ -10,7 +10,7 @@ uvicorn
 openai
 # Visualización y App
 streamlit==1.26.0
-pydeck 
+pydeck==0.9.1
 plotly==5.16.1
 
 # Utilidades
