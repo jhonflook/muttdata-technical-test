@@ -1,8 +1,5 @@
 .vercel
 .env
-*.joblib
 *.pyc
-*.json
 
-datalake/
-models/
+demand_data.csv
